@@ -1,0 +1,15 @@
+[Unit]
+Description=OLX Mieszkania – Streamlit dashboard
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/piotrmalec/AntigravityProjects/olxbot
+ExecStart=/home/piotrmalec/AntigravityProjects/olxbot/scripts/start_streamlit.sh
+Restart=on-failure
+RestartSec=10
+User=piotrmalec
+
+[Install]
+WantedBy=default.target
