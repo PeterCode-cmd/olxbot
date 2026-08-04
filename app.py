@@ -344,6 +344,8 @@ def set_status(lid: str, status: str) -> None:
     if lid in records:
         records[lid]["status"] = status
         save_listings(records)
+        # Clear cache to force reload
+        st.cache_data.clear()
         st.success(f"Status updated to {status}")
         st.rerun()
 
@@ -353,7 +355,10 @@ def set_notes(lid: str, notes: str) -> None:
     if lid in records:
         records[lid]["notes"] = notes
         save_listings(records)
+        # Clear cache to force reload
+        st.cache_data.clear()
         st.success("Notes saved")
+        st.rerun()
 
 
 # ─── Sidebar ─────────────────────────────────────────────────────────────────
