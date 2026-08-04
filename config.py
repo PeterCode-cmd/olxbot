@@ -76,9 +76,10 @@ SEARCHES = [
     },
 ]
 
-# Paginacja
+# Paginacja OLX
 PAGE_SIZE = 40
-MAX_PAGES = 10
+MAX_PAGES = 30  # Zwiększono z 10 na 30 (max 1200 ogłoszeń)
+# Ustaw na None aby pobierać wszystkie dostępne ogłoszenia (bez limitu)
 
 # ─── Scheduler ──────────────────────────────────────────────────────────────
 CHECK_INTERVAL_MINUTES = 20

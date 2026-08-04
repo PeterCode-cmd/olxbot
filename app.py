@@ -176,6 +176,9 @@ div.stButton > button {
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: rgba(255,255,255,0.03); }
 ::-webkit-scrollbar-thumb { background: rgba(99,102,241,0.4); border-radius: 3px; }
+
+/* Lazy loading images */
+img { loading: lazy; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -300,15 +303,13 @@ def parse_area(label: str) -> int | None:
     return None
 
 
-def get_photos(listing: dict, max_photos: int = 3) -> list[str]:
-    """Zwraca max max_photos zdjęć dla optymalizacji wydajności."""
+def get_photos(listing: dict) -> list[str]:
+    """Zwraca wszystkie zdjęcia w optymalnej rozdzielczości."""
     urls = []
-    for i, photo in enumerate(listing.get("photos", [])):
-        if i >= max_photos:
-            break
+    for photo in listing.get("photos", []):
         link = photo.get("link", "")
         if link:
-            urls.append(link.replace("{width}", "600").replace("{height}", "450"))
+            urls.append(link.replace("{width}", "800").replace("{height}", "600"))
     return urls
 
 
@@ -396,9 +397,12 @@ with st.sidebar:
         format_func=lambda x: {"new": "🆕 Nowe", "liked": "❤️ Polubione", "disliked": "👎 Odrzucone"}[x],
     )
 
-    # District filter
-    districts = sorted(set(l.get("district_name", "—") for l in listings_list if l.get("district_name")))
-    district_filter = st.multiselect("Dzielnica", options=districts, default=[])
+    # District filter - tylko jeśli jest dużo danych
+    if len(listings_list) > 50:
+        districts = sorted(set(l.get("district_name", "—") for l in listings_list if l.get("district_name")))
+        district_filter = st.multiselect("Dzielnica", options=districts, default=[])
+    else:
+        district_filter = []
 
     # Area filter
     areas = [parse_area(get_param(l.get("params", []), "m")) for l in listings_list]
@@ -406,10 +410,13 @@ with st.sidebar:
     min_area, max_area = (min(area_values), max(area_values)) if area_values else (0, 100)
     area_range = st.slider("Powierzchnia (m²)", min_area, max_area, (min_area, max_area), step=1)
 
-    # Rooms filter
-    room_options = sorted({get_param(l.get("params", []), "rooms") for l in listings_list if get_param(l.get("params", []), "rooms")})
-    room_options = [r for r in room_options if r]
-    rooms_filter = st.multiselect("Pokoje", options=room_options, default=room_options)
+    # Rooms filter - tylko jeśli jest dużo danych
+    if len(listings_list) > 50:
+        room_options = sorted({get_param(l.get("params", []), "rooms") for l in listings_list if get_param(l.get("params", []), "rooms")})
+        room_options = [r for r in room_options if r]
+        rooms_filter = st.multiselect("Pokoje", options=room_options, default=room_options)
+    else:
+        rooms_filter = []
 
     # Price filter
     prices = [l.get("total_price", 0) for l in listings_list if l.get("total_price")]
@@ -445,9 +452,9 @@ if sort_by == "Cena rosnąco":
 elif sort_by == "Cena malejąco":
     filtered.sort(key=lambda x: x.get("total_price", 0), reverse=True)
 elif sort_by == "Najnowsze":
-    filtered.sort(key=lambda x: x.get("found_at", ""), reverse=True)
+    filtered.sort(key=lambda x: x.get("last_refresh_time", ""), reverse=True)
 else:
-    filtered.sort(key=lambda x: x.get("found_at", ""))
+    filtered.sort(key=lambda x: x.get("last_refresh_time", ""))
 
 # ─── Header ───────────────────────────────────────────────────────────────────
 st.markdown(f"""
@@ -463,27 +470,31 @@ if not filtered:
     st.info("😔 Brak ogłoszeń pasujących do filtrów. Zmień kryteria lub uruchom bota żeby pobrać nowe oferty.")
     st.stop()
 
-# ─── Pagination ─────────────────────────────────────────────────────────────
-ITEMS_PER_PAGE = 10
+# ─── Dynamic loading ──────────────────────────────────────────────────────────
+# Inicjalizuj session_state
+if "items_shown" not in st.session_state:
+    st.session_state.items_shown = 10
+
+ITEMS_PER_LOAD = 10
 total_items = len(filtered)
-total_pages = (total_items + ITEMS_PER_PAGE - 1) // ITEMS_PER_PAGE
 
-page = st.number_input(
-    "Strona",
-    min_value=1,
-    max_value=total_pages if total_pages > 0 else 1,
-    value=1,
-    step=1,
-)
+# Pokaż przycisk reset jeśli zmieniono filtry
+if "last_filter_hash" not in st.session_state:
+    st.session_state.last_filter_hash = hash(str(filtered))
 
-start_idx = (page - 1) * ITEMS_PER_PAGE
-end_idx = start_idx + ITEMS_PER_PAGE
-paginated_listings = filtered[start_idx:end_idx]
+current_filter_hash = hash(str(filtered))
+if current_filter_hash != st.session_state.last_filter_hash:
+    st.session_state.items_shown = 10
+    st.session_state.last_filter_hash = current_filter_hash
 
-st.markdown(f"<small>Pokazuję {start_idx + 1}-{min(end_idx, total_items)} z {total_items} ogłoszeń</small>", unsafe_allow_html=True)
+# Pokaż aktualną ilość
+items_to_show = min(st.session_state.items_shown, total_items)
+display_listings = filtered[:items_to_show]
+
+st.markdown(f"<small>Pokazuję {items_to_show} z {total_items} ogłoszeń</small>", unsafe_allow_html=True)
 
 # ─── Listings ─────────────────────────────────────────────────────────────────
-for listing in paginated_listings:
+for listing in display_listings:
     lid        = listing["id"]
     title      = listing.get("title", "Brak tytułu")
     url        = listing.get("url", "#")
@@ -497,7 +508,7 @@ for listing in paginated_listings:
     desc       = clean_html(listing.get("description", ""))
     contact    = listing.get("contact", {})
     found_at   = format_date(listing.get("found_at", ""))
-    created    = format_date(listing.get("created_time", ""))
+    created    = format_date(listing.get("last_refresh_time", ""))
 
     # Params
     area      = get_param(params, "m")
@@ -568,17 +579,96 @@ for listing in paginated_listings:
 
         with img_col:
             if photos:
-                # Uproszczona galeria - tylko główne zdjęcie + link do OLX
-                st.markdown(f"""
-                <div style="position:relative; width:100%; border-radius:12px; overflow:hidden; background:#000;">
-                    <a href="{url}" target="_blank" style="text-decoration:none;">
-                        <img src="{photos[0]}" style="width:100%; height:260px; object-fit:cover; display:block; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'"/>
+                # Interaktywna galeria z podglądem i Lightboxem po kliknięciu
+                photos_json = json.dumps(photos)
+                gallery_id = f"gallery_{lid}"
+                
+                lightbox_html = f"""
+                <div id="{gallery_id}" style="position:relative; width:100%; font-family:sans-serif;">
+                    <div style="position:relative; width:100%; border-radius:12px; overflow:hidden; background:#000; cursor:pointer;" onclick="openLightbox_{lid}(currentIndex_{lid})">
+                        <img id="main_img_{lid}" src="{photos[0]}" style="width:100%; height:260px; object-fit:cover; display:block; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'"/>
                         <div style="position:absolute; bottom:10px; right:10px; background:rgba(0,0,0,0.7); color:#fff; padding:4px 10px; border-radius:12px; font-size:12px; backdrop-filter:blur(4px);">
-                            � {len(photos)} zdjęć
+                            🔍 Kliknij, aby powiększyć (<span id="counter_{lid}">1</span>/{len(photos)})
                         </div>
-                    </a>
+                    </div>
+
+                    <!-- Miniatury -->
+                    <div style="display:flex; gap:6px; margin-top:8px; overflow-x:auto; padding-bottom:4px;">
+                        {''.join([f'<img src="{p}" onclick="setPhoto_{lid}({i})" style="width:50px; height:50px; object-fit:cover; border-radius:6px; cursor:pointer; opacity:{"1" if i==0 else "0.5"}; border:2px solid {"#6366f1" if i==0 else "transparent"};" id="thumb_{lid}_{i}"/>' for i, p in enumerate(photos)])}
+                    </div>
+
+                    <!-- Lightbox Modal -->
+                    <div id="modal_{lid}" style="display:none; position:fixed; z-index:999999; left:0; top:0; width:100vw; height:100vh; background:rgba(0,0,0,0.95); backdrop-filter:blur(8px); flex-direction:column; align-items:center; justify-content:center;">
+                        <button onclick="closeLightbox_{lid}()" style="position:absolute; top:20px; right:35px; background:rgba(255,255,255,0.2); border:none; color:#fff; font-size:40px; font-weight:bold; cursor:pointer; z-index:1000000; width:60px; height:60px; border-radius:50%; transition:0.2s;" onmouseover="this.style.background='rgba(255,255,255,0.3)'" onmouseout="this.style.background='rgba(255,255,255,0.2)'">✕</button>
+                        
+                        <button onclick="prevPhoto_{lid}()" style="position:absolute; left:20px; background:rgba(255,255,255,0.15); border:none; color:#fff; font-size:30px; padding:15px 20px; border-radius:50%; cursor:pointer; transition:0.2s;" onmouseover="this.style.background='rgba(255,255,255,0.3)'" onmouseout="this.style.background='rgba(255,255,255,0.15)'">❮</button>
+                        
+                        <img id="modal_img_{lid}" src="" style="max-width:90vw; max-height:85vh; border-radius:8px; box-shadow:0 10px 40px rgba(0,0,0,0.8); object-fit:contain;"/>
+                        
+                        <button onclick="nextPhoto_{lid}()" style="position:absolute; right:20px; background:rgba(255,255,255,0.15); border:none; color:#fff; font-size:30px; padding:15px 20px; border-radius:50%; cursor:pointer; transition:0.2s;" onmouseover="this.style.background='rgba(255,255,255,0.3)'" onmouseout="this.style.background='rgba(255,255,255,0.15)'">❯</button>
+                        
+                        <div id="modal_counter_{lid}" style="color:#aaa; font-size:14px; margin-top:15px;"></div>
+                    </div>
                 </div>
-                """, unsafe_allow_html=True)
+
+                <script>
+                    (function() {{
+                        const photos_{lid} = {photos_json};
+                        window.currentIndex_{lid} = 0;
+
+                        window.setPhoto_{lid} = function(index) {{
+                            window.currentIndex_{lid} = index;
+                            document.getElementById('main_img_{lid}').src = photos_{lid}[index];
+                            document.getElementById('counter_{lid}').innerText = index + 1;
+                            
+                            photos_{lid}.forEach((_, i) => {{
+                                const thumb = document.getElementById('thumb_{lid}_' + i);
+                                if (thumb) {{
+                                    thumb.style.opacity = (i === index) ? '1' : '0.5';
+                                    thumb.style.borderColor = (i === index) ? '#6366f1' : 'transparent';
+                                }}
+                            }});
+                        }};
+
+                        window.openLightbox_{lid} = function(index) {{
+                            window.currentIndex_{lid} = index;
+                            document.getElementById('modal_img_{lid}').src = photos_{lid}[index];
+                            document.getElementById('modal_counter_{lid}').innerText = (index + 1) + ' / ' + photos_{lid}.length;
+                            document.getElementById('modal_{lid}').style.display = 'flex';
+                            document.body.style.overflow = 'hidden';
+                        }};
+
+                        window.closeLightbox_{lid} = function() {{
+                            document.getElementById('modal_{lid}').style.display = 'none';
+                            document.body.style.overflow = 'auto';
+                        }};
+
+                        window.nextPhoto_{lid} = function() {{
+                            window.currentIndex_{lid} = (window.currentIndex_{lid} + 1) % photos_{lid}.length;
+                            document.getElementById('modal_img_{lid}').src = photos_{lid}[window.currentIndex_{lid}];
+                            document.getElementById('modal_counter_{lid}').innerText = (window.currentIndex_{lid} + 1) + ' / ' + photos_{lid}.length;
+                            setPhoto_{lid}(window.currentIndex_{lid});
+                        }};
+
+                        window.prevPhoto_{lid} = function() {{
+                            window.currentIndex_{lid} = (window.currentIndex_{lid} - 1 + photos_{lid}.length) % photos_{lid}.length;
+                            document.getElementById('modal_img_{lid}').src = photos_{lid}[window.currentIndex_{lid}];
+                            document.getElementById('modal_counter_{lid}').innerText = (window.currentIndex_{lid} + 1) + ' / ' + photos_{lid}.length;
+                            setPhoto_{lid}(window.currentIndex_{lid});
+                        }};
+
+                        document.addEventListener('keydown', function(e) {{
+                            const modal = document.getElementById('modal_{lid}');
+                            if (modal && modal.style.display === 'flex') {{
+                                if (e.key === 'ArrowRight') nextPhoto_{lid}();
+                                if (e.key === 'ArrowLeft') prevPhoto_{lid}();
+                                if (e.key === 'Escape') closeLightbox_{lid}();
+                            }}
+                        }});
+                    }})();
+                </script>
+                """
+                st.components.v1.html(lightbox_html, height=340)
             else:
                 st.markdown("""
                 <div style="background:rgba(0,0,0,0.3);border-radius:12px;height:200px;
@@ -624,8 +714,8 @@ for listing in paginated_listings:
 
             # Opis
             if desc:
-                st.markdown('<div class="section-header">Opis ogłoszenia</div>', unsafe_allow_html=True)
-                st.markdown(f'<div class="desc-box">{desc[:800]}{"…" if len(desc)>800 else ""}</div>', unsafe_allow_html=True)
+                with st.expander("📄 Pokaż opis ogłoszenia"):
+                    st.markdown(f'<div class="desc-box">{desc[:800]}{"…" if len(desc)>800 else ""}</div>', unsafe_allow_html=True)
 
             # Notatki
             st.markdown('<div class="section-header" style="margin-top:12px">📝 Notatki</div>', unsafe_allow_html=True)
@@ -668,3 +758,18 @@ for listing in paginated_listings:
         st.markdown("</div>", unsafe_allow_html=True)
         st.markdown("</div>", unsafe_allow_html=True)
         st.markdown("<div style='height:4px'></div>", unsafe_allow_html=True)
+
+# ─── Load more button ─────────────────────────────────────────────────────────
+if items_to_show < total_items:
+    remaining = total_items - items_to_show
+    col1, col2, col3 = st.columns([1, 2, 1])
+    with col2:
+        c1, c2 = st.columns(2)
+        with c1:
+            if st.button(f"📥 Więcej ({remaining})", use_container_width=True):
+                st.session_state.items_shown += ITEMS_PER_LOAD
+                st.rerun()
+        with c2:
+            if st.button("📋 Wszystko", use_container_width=True):
+                st.session_state.items_shown = total_items
+                st.rerun()

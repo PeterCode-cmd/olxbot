@@ -308,10 +308,12 @@ def fetch_listings(search_cfg: dict) -> list[dict]:
     all_listings: list[dict] = []
     seen_on_page: set = set()
 
-    for page_num in range(config.MAX_PAGES):
+    max_pages = config.MAX_PAGES if config.MAX_PAGES is not None else 9999
+
+    for page_num in range(max_pages):
         offset = page_num * config.PAGE_SIZE
-        log.info("[%s] Strona %d/%d (offset=%d)…",
-                 search_cfg["name"], page_num + 1, config.MAX_PAGES, offset)
+        log.info("[%s] Strona %d (offset=%d)…",
+                 search_cfg["name"], page_num + 1, offset)
 
         page = _fetch_page(offset, search_cfg)
 
@@ -555,6 +557,33 @@ def run_check() -> None:
     log.info("═" * 60)
     log.info("Sprawdzam OLX dla wszystkich wyszukiwań…")
 
+    # Pobierz wszystkie aktualne ogłoszenia z OLX
+    all_current_ids = set()
+    all_listings_by_search = {}
+    
+    for search_cfg in config.SEARCHES:
+        log.info("🔍 Przeszukuję: %s…", search_cfg["name"])
+        listings = fetch_listings(search_cfg)
+        all_listings_by_search[search_cfg["name"]] = listings
+        for listing in listings:
+            listing_id = str(listing.get("id", ""))
+            if listing_id:
+                all_current_ids.add(listing_id)
+
+    # Wyczyść nieaktualne ogłoszenia (których nie ma już na OLX)
+    listings = load_listings()
+    initial_count = len(listings)
+    removed = 0
+    for lid in list(listings.keys()):
+        if lid not in all_current_ids:
+            log.info(f"Ogłoszenie {lid} nie jest już dostępne na OLX - usuwam")
+            del listings[lid]
+            removed += 1
+    
+    if removed > 0:
+        save_listings(listings)
+        log.info(f"Usunięto {removed} nieaktualnych ogłoszeń (z {initial_count} do {len(listings)})")
+
     seen_ids = load_seen_ids()
     new_count_total = 0
 
@@ -563,8 +592,7 @@ def run_check() -> None:
         log.info("Naprawiono analizę AI dla %d zapisanych ogłoszeń z błędem 429.", fixed)
 
     for search_cfg in config.SEARCHES:
-        log.info("🔍 Przeszukuję: %s…", search_cfg["name"])
-        listings = fetch_listings(search_cfg)
+        listings = all_listings_by_search[search_cfg["name"]]
         new_count_this_search = 0
         max_total = search_cfg.get("max_total_price", float("inf"))
 

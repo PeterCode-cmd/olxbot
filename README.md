@@ -158,7 +158,7 @@ Edytuj `config.py` aby zmienić:
 | Parametr | Domyślna wartość | Opis |
 |---|---|---|
 | `ALLOWED_DISTRICTS` | Mokotów, Wola, Ochota, Śródmieście, Bemowo, Wilanów, Żoliborz, Bielany, Włochy, Ursus | Dozwolone dzielnice |
-| `CHECK_INTERVAL_MINUTES` | 20 | Jak często bot sprawdza OLX |
+| `CHECK_INTERVAL_MINUTES` | 60 | Jak często bot sprawdza OLX |
 | `MAX_TOTAL_PRICE` | 3400 | Maksymalna łączna cena (czynsz + admin) |
 | `SEARCHES` | 2-pok i 1-pok w Warszawie | Konfiguracja wyszukiwań |
 
