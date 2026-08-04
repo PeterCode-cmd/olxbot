@@ -52,9 +52,14 @@ def load_listings() -> dict:
     if LISTINGS_FILE.exists():
         try:
             return json.loads(LISTINGS_FILE.read_text(encoding="utf-8"))
-        except (json.JSONDecodeError, ValueError):
+        except Exception:
             return {}
     return {}
+
+
+def save_listings(records: dict) -> None:
+    """Zapisuje wszystkie ogłoszenia do listings.json."""
+    LISTINGS_FILE.write_text(json.dumps(records, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
 REPAIR_AI_ERROR_REGEX = re.compile(r"\b429\b|\bToo Many Requests\b", re.IGNORECASE)

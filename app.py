@@ -275,12 +275,17 @@ def save_listings_to_github(records: dict) -> bool:
 
 def save_listings(records: dict) -> None:
     # Zapisz lokalnie (fallback)
-    LISTINGS_FILE.write_text(
-        json.dumps(records, ensure_ascii=False, indent=2), encoding="utf-8"
-    )
+    try:
+        LISTINGS_FILE.write_text(
+            json.dumps(records, ensure_ascii=False, indent=2), encoding="utf-8"
+        )
+    except Exception as e:
+        st.warning(f"Error saving locally: {e}")
     
     # Zapisz do GitHub jeśli skonfigurowane
-    save_listings_to_github(records)
+    success = save_listings_to_github(records)
+    if not success:
+        st.warning("Failed to save to GitHub - check GITHUB_TOKEN and GITHUB_REPO in secrets")
 
 
 def get_param(params: list, key: str) -> str:

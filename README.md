@@ -134,10 +134,10 @@ git push -u origin main
 
 3. **Dodaj sekrety w Streamlit Cloud:**
    - W ustawieniach aplikacji → Secrets
-   - Dodaj:
-     ```
-     GITHUB_TOKEN=ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-     GITHUB_REPO=username/olxbot
+   - Dodaj w formacie TOML:
+     ```toml
+     GITHUB_TOKEN = "ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+     GITHUB_REPO = "username/olxbot"
      ```
 
 ### Jak to działa

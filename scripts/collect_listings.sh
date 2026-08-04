@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# Jednorazowe pobranie ogłoszeń z OLX (filtry → AI → listings.json).
-# Uruchamiaj z crona co 3 godziny lub ręcznie: ./scripts/collect_listings.sh
+# Single OLX listing fetch (filters -> AI -> listings.json).
+# Run from cron every 10 min or manually: ./scripts/collect_listings.sh
 
 set -euo pipefail
 
@@ -18,40 +18,56 @@ LOCK="$ROOT/.collect_listings.lock"
 
 exec >>"$LOG" 2>&1
 
-echo "────────────────────────────────────────────────────────────"
+echo "------------------------------------------------------------"
 echo "[$(date '+%Y-%m-%d %H:%M:%S')] Start collect_listings.sh (pid $$)"
 
 if ! command -v flock >/dev/null 2>&1; then
-  echo "Brak flock – uruchamiam bez blokady."
+  echo "No flock - running without lock."
   /usr/bin/python3 "$ROOT/bot.py"
 else
-  # Uruchom bota z blokadą
-  flock -n "$LOCK" /usr/bin/python3 "$ROOT/bot.py"
+  # Run bot with lock
+  if flock -n "$LOCK" /usr/bin/python3 "$ROOT/bot.py"; then
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] Bot finished successfully."
+  else
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] Bot already running (lock held). Skipping this run."
+    exit 0
+  fi
 fi
 
-# Po zakończeniu bota - commit zmian do GitHub (jeśli skonfigurowane)
+# After bot finishes - commit changes to GitHub (if configured)
 if [ -f "$ROOT/.env" ] && grep -q "GITHUB_TOKEN=" "$ROOT/.env" && grep -q "GITHUB_REPO=" "$ROOT/.env"; then
   echo "[$(date '+%Y-%m-%d %H:%M:%S')] Committing changes to GitHub..."
   
-  # Załaduj zmienne środowiskowe
+  # Load environment variables
   export $(grep -v '^#' "$ROOT/.env" | xargs)
   
   if [ -n "$GITHUB_TOKEN" ] && [ -n "$GITHUB_REPO" ]; then
-    # Konfiguruj git
+    # Configure git
     git config user.name "OLX Bot"
     git config user.email "bot@olxbot.local"
     
-    # Dodaj zmiany
+    # Add changes
     git add listings.json seen_ids.json 2>/dev/null || true
     
-    # Sprawdź czy są zmiany
+    # Check if there are changes
     if git diff --cached --quiet; then
       echo "[$(date '+%Y-%m-%d %H:%M:%S')] No changes to commit."
     else
       # Commit
       git commit -m "Update listings $(date '+%Y-%m-%d %H:%M:%S')" || true
       
-      # Push z użyciem tokena
+      # Stash any uncommitted changes (in case of local edits)
+      git stash push -m "Auto-stash before pull" 2>/dev/null || true
+      
+      # Pull remote changes first (in case Streamlit Cloud made changes)
+      git pull --rebase https://"$GITHUB_TOKEN"@github.com/"$GITHUB_REPO".git main 2>/dev/null || \
+      git pull --rebase https://"$GITHUB_TOKEN"@github.com/"$GITHUB_REPO".git master 2>/dev/null || \
+      echo "[$(date '+%Y-%m-%d %H:%M:%S')] Pull failed or no remote"
+      
+      # Unstash if we stashed
+      git stash pop 2>/dev/null || true
+      
+      # Push with token
       git push https://"$GITHUB_TOKEN"@github.com/"$GITHUB_REPO".git main || \
       git push https://"$GITHUB_TOKEN"@github.com/"$GITHUB_REPO".git master || \
       echo "[$(date '+%Y-%m-%d %H:%M:%S')] Failed to push to GitHub"
