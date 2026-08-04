@@ -2739,210 +2739,6 @@
       "lease_type": "najem okazjonalny"
     }
   },
-  "1088396387": {
-    "id": "1088396387",
-    "title": "Mieszkanie od zaraz",
-    "url": "https://www.olx.pl/d/oferta/mieszkanie-od-zaraz-CID3-ID1bENCr.html",
-    "description": "<p>Mieszkanie 2 pokojowe w pełni umeblowane i wyposażone w sprzęty agd i rtv. Świetna lokalizacja Bielany ul. Danego. Klatka schodowa monitoriwana oraz domofon. Stacja metra 300m. Pod blokiem poczta, apteka biedronka i wiele innych sklepów. W bloku znajdują się 2 windy w tym jedna towarowa. Nieakceptowane są żadne zwierzęta domowe w związku ze złym doświadczeniem w tym temacie. Mieszkanie wolne od zaraz. Nie odpowiadam na wiadomości proszę o kontakt telefoniczny podany w ogłoszeniu.</p>",
-    "created_time": "2026-07-30T16:23:37+02:00",
-    "last_refresh_time": "2026-07-30T16:23:37+02:00",
-    "location": {
-      "city": {
-        "id": 17871,
-        "name": "Warszawa",
-        "normalized_name": "warszawa",
-        "_nodeId": "Y2l0eToxNzg3MQ=="
-      },
-      "district": {
-        "id": 369,
-        "name": "Bielany",
-        "normalized_name": null,
-        "_nodeId": "ZGlzdHJpY3Q6MzY5"
-      },
-      "region": {
-        "id": 2,
-        "name": "Mazowieckie",
-        "normalized_name": "mazowieckie",
-        "_nodeId": "cmVnaW9uOjI="
-      }
-    },
-    "photos": [
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/guusea01wkdr-PL/image;s={width}x{height}",
-        "height": 1024,
-        "rotation": 0,
-        "width": 498
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/4cf3o74d4vxa2-PL/image;s={width}x{height}",
-        "height": 622,
-        "rotation": 0,
-        "width": 1280
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/grbkdcasf4392-PL/image;s={width}x{height}",
-        "height": 1024,
-        "rotation": 0,
-        "width": 498
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/5nxjsnrngshm2-PL/image;s={width}x{height}",
-        "height": 1024,
-        "rotation": 0,
-        "width": 498
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/lct0p2zc7r2e2-PL/image;s={width}x{height}",
-        "height": 1024,
-        "rotation": 0,
-        "width": 498
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/2pocd6lj9c01-PL/image;s={width}x{height}",
-        "height": 1024,
-        "rotation": 0,
-        "width": 498
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/rprgvlpluqu63-PL/image;s={width}x{height}",
-        "height": 1024,
-        "rotation": 0,
-        "width": 498
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/7zutxgv7kbac1-PL/image;s={width}x{height}",
-        "height": 1024,
-        "rotation": 0,
-        "width": 498
-      }
-    ],
-    "params": [
-      {
-        "key": "price",
-        "name": "Cena",
-        "type": "price",
-        "value": {
-          "__typename": "PriceParam",
-          "value": 2600,
-          "type": "price",
-          "negotiable": false,
-          "label": "2 600 zł",
-          "currency": "PLN",
-          "converted_value": null,
-          "converted_currency": null,
-          "arranged": false,
-          "budget": false
-        }
-      },
-      {
-        "key": "floor_select",
-        "name": "Poziom",
-        "type": "select",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "floor_11",
-          "label": "Powyżej 10"
-        }
-      },
-      {
-        "key": "furniture",
-        "name": "Umeblowane",
-        "type": "select",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "yes",
-          "label": "Tak"
-        }
-      },
-      {
-        "key": "builttype",
-        "name": "Rodzaj zabudowy",
-        "type": "select",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "blok",
-          "label": "Blok"
-        }
-      },
-      {
-        "key": "m",
-        "name": "Powierzchnia",
-        "type": "input",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "32",
-          "label": "32 m²"
-        }
-      },
-      {
-        "key": "rooms",
-        "name": "Liczba pokoi",
-        "type": "select",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "two",
-          "label": "2 pokoje"
-        }
-      },
-      {
-        "key": "rent",
-        "name": "Czynsz (dodatkowo)",
-        "type": "input",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "500",
-          "label": "500 zł"
-        }
-      }
-    ],
-    "contact": {
-      "courier": false,
-      "chat": true,
-      "name": "Bożena",
-      "negotiation": false,
-      "phone": true
-    },
-    "user": {
-      "id": 21117567,
-      "uuid": "ffce0e06-25f9-4d4f-9a59-ae1477b57dce",
-      "_nodeId": "8c4561805052f507f6ea963da565e99911f6b004",
-      "about": "",
-      "b2c_business_page": false,
-      "company_name": "",
-      "created": "2014-05-23T01:05:01+02:00",
-      "is_online": true,
-      "last_seen": "2026-08-03T11:11:22+02:00",
-      "name": "Bożena",
-      "other_ads_enabled": true,
-      "photo": null,
-      "seller_type": null,
-      "social_network_account_type": null,
-      "verification": {
-        "status": "none"
-      }
-    },
-    "map": {
-      "lat": 52.285168,
-      "lon": 20.936546,
-      "radius": 0,
-      "show_detailed": true,
-      "zoom": 16
-    },
-    "district_name": "Bielany",
-    "rent_price": 2600.0,
-    "admin_rent": 500.0,
-    "total_price": 3100.0,
-    "found_at": "2026-08-03T09:13:37.312419+00:00",
-    "status": "new",
-    "notes": "",
-    "ai_analysis": {
-      "ai_total_price": 3300.0,
-      "ai_notes": "Czynsz najmu 2600zł + czynsz administracyjny 500zł + szacowane media 200zł, brak informacji o kaucji i typie najmu",
-      "media_cost": 200.0,
-      "deposit": "Brak info",
-      "lease_type": "Brak info"
-    }
-  },
   "1084036346": {
     "id": "1084036346",
     "title": "Bezpośrednio 2pokojowe, os. Hubertus w pobliżu Galerii Mokotów",
@@ -13741,232 +13537,6 @@
       "media_cost": 850.0,
       "deposit": "3000 zł",
       "lease_type": "najem okazjonalny"
-    },
-    "status": "new",
-    "notes": ""
-  },
-  "1088380007": {
-    "id": "1088380007",
-    "title": "Kawalerka Smocza kamienica",
-    "url": "https://www.olx.pl/d/oferta/kawalerka-smocza-kamienica-CID3-ID1bEJmf.html",
-    "description": "Do wynajęcia przytulne, w pełni wyposażone mieszkanie w zabytkowej kamienicy przy ulicy Smoczej 1 w Warszawie. <br />\nCicha, spokojna okolica z widokiem na Śródmieście i Wolę, a jednocześnie świetnie skomunikowana – zaledwie jedną ulicę od alei Jana Pawła. <br />\nMieszkanie wyposażone jest w płytę grzewczą, dużą lodówkę z zamrażarką, pralkę, czajnik, komplet akcesoriów kuchennych oraz wygodną, dużą kanapę. <br />\nDo dyspozycji najemcy jest szybki internet światłowodowy, telewizja kablowa i telewizor z funkcją Smart. <br />\n<br />\n-umowa najmu na okres 12 miesięcy<br />\n-kaucja jednomiesięczna w wysokości 2750 zł<br />\n-opłata miesięczna 2750 zł<br />\n-ryczałt za media 350 zł - w tym szybki internet , kablówka , energia elektryczna, zaliczki na media <br />\n<br />\nMieszkanie jest dostępne od 1.08",
-    "created_time": "2026-07-30T15:20:06+02:00",
-    "last_refresh_time": "2026-07-30T15:24:11+02:00",
-    "location": {
-      "city": {
-        "id": 17871,
-        "name": "Warszawa",
-        "normalized_name": "warszawa",
-        "_nodeId": "Y2l0eToxNzg3MQ=="
-      },
-      "district": {
-        "id": 359,
-        "name": "Wola",
-        "normalized_name": null,
-        "_nodeId": "ZGlzdHJpY3Q6MzU5"
-      },
-      "region": {
-        "id": 2,
-        "name": "Mazowieckie",
-        "normalized_name": "mazowieckie",
-        "_nodeId": "cmVnaW9uOjI="
-      }
-    },
-    "photos": [
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/zppm8afzig981-PL/image;s={width}x{height}",
-        "height": 800,
-        "rotation": 0,
-        "width": 1200
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/v8327mttli223-PL/image;s={width}x{height}",
-        "height": 800,
-        "rotation": 0,
-        "width": 1200
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/rhov2hal8c771-PL/image;s={width}x{height}",
-        "height": 800,
-        "rotation": 0,
-        "width": 1200
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/w2ud5dvncxbt1-PL/image;s={width}x{height}",
-        "height": 800,
-        "rotation": 0,
-        "width": 1200
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/yqas457zlaxv3-PL/image;s={width}x{height}",
-        "height": 800,
-        "rotation": 0,
-        "width": 1200
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/sw08gajyw25o3-PL/image;s={width}x{height}",
-        "height": 800,
-        "rotation": 0,
-        "width": 1200
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/mg1lqqaltctd2-PL/image;s={width}x{height}",
-        "height": 800,
-        "rotation": 0,
-        "width": 1200
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/kesk7rcjks1u-PL/image;s={width}x{height}",
-        "height": 800,
-        "rotation": 0,
-        "width": 1200
-      }
-    ],
-    "params": [
-      {
-        "key": "price",
-        "name": "Cena",
-        "type": "price",
-        "value": {
-          "__typename": "PriceParam",
-          "value": 2750,
-          "type": "price",
-          "negotiable": false,
-          "label": "2 750 zł",
-          "currency": "PLN",
-          "converted_value": null,
-          "converted_currency": null,
-          "arranged": false,
-          "budget": false
-        }
-      },
-      {
-        "key": "pets",
-        "name": "Zwierzęta",
-        "type": "select",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "Tak",
-          "label": "Tak"
-        }
-      },
-      {
-        "key": "winda",
-        "name": "Winda",
-        "type": "select",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "Nie",
-          "label": "Nie"
-        }
-      },
-      {
-        "key": "parking",
-        "name": "Parking",
-        "type": "checkboxes",
-        "value": {
-          "__typename": "CheckboxesParam",
-          "label": "identyfikator do strefy płatnego parkowania",
-          "checkboxParamKey": [
-            "identyfikator"
-          ]
-        }
-      },
-      {
-        "key": "floor_select",
-        "name": "Poziom",
-        "type": "select",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "floor_3",
-          "label": "3"
-        }
-      },
-      {
-        "key": "furniture",
-        "name": "Umeblowane",
-        "type": "select",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "yes",
-          "label": "Tak"
-        }
-      },
-      {
-        "key": "builttype",
-        "name": "Rodzaj zabudowy",
-        "type": "select",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "kamienica",
-          "label": "Kamienica"
-        }
-      },
-      {
-        "key": "m",
-        "name": "Powierzchnia",
-        "type": "input",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "24",
-          "label": "24 m²"
-        }
-      },
-      {
-        "key": "rooms",
-        "name": "Liczba pokoi",
-        "type": "select",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "one",
-          "label": "Kawalerka"
-        }
-      }
-    ],
-    "contact": {
-      "courier": false,
-      "chat": true,
-      "name": "Anna",
-      "negotiation": false,
-      "phone": true
-    },
-    "user": {
-      "id": 298791699,
-      "uuid": "8c794fda-b838-4b79-b271-426ac2b7be5e",
-      "_nodeId": "abcadb181f798c88f26548fa45321e4558eaa5f1",
-      "about": "",
-      "b2c_business_page": false,
-      "company_name": "",
-      "created": "2018-10-05T10:05:57+02:00",
-      "is_online": false,
-      "last_seen": "2026-07-31T17:47:45+02:00",
-      "name": "Anna",
-      "other_ads_enabled": true,
-      "photo": null,
-      "seller_type": null,
-      "social_network_account_type": "facebook",
-      "verification": {
-        "status": "none"
-      }
-    },
-    "map": {
-      "lat": 52.23725,
-      "lon": 20.96608,
-      "radius": 7,
-      "show_detailed": false,
-      "zoom": 13
-    },
-    "district_name": "Wola",
-    "rent_price": 2750.0,
-    "admin_rent": 0.0,
-    "total_price": 2750.0,
-    "found_at": "2026-08-03T10:32:29.551734+00:00",
-    "ai_analysis": {
-      "ai_total_price": 3200.0,
-      "ai_notes": "Czynsz najmu 2750 zł, ryczałt za media 350 zł, łącznie 3200 zł, kaucja jednomiesięczna",
-      "media_cost": 350.0,
-      "deposit": "2750 zł",
-      "lease_type": "Brak info"
     },
     "status": "new",
     "notes": ""
@@ -25786,222 +25356,6 @@
       "media_cost": 200.0,
       "deposit": "4000 zł",
       "lease_type": "Brak info"
-    },
-    "status": "new",
-    "notes": ""
-  },
-  "1086386805": {
-    "id": "1086386805",
-    "title": "Wygodne, nowoczesne i widne M1 - WŁOCHY - ul. Popularna / Krańcowa",
-    "url": "https://www.olx.pl/d/oferta/wygodne-nowoczesne-i-widne-m1-wlochy-ul-popularna-krancowa-CID3-ID1bvmPP.html",
-    "description": "<p>Do wynajęcia wygodne, nowoczesne i widne  mieszkanie w inwestycji - Włoskie Tarasy.</p><p></p><p>Oferta skierowana do osób zamieszkających samodzielnie. Mieszkanie jest zbyt małe, żeby zamieszkiwała w nim para.</p><p></p><p>BEZPOŚREDNIO OD WŁAŚCICIELA. BEZ PROWIZJI.</p><p></p><p>ZADZWOŃ, jestem do dyspozycji codziennie 7-22</p><p></p><p>Funkcjonalnie urządzona kawalerka, w pełni umeblowana, wyposażona w AGD, gotowa do zamieszkania od zaraz. Mieszkanie świeże, wszystkie sprzęty prawie nowe. </p><p></p><p>GŁÓWNE ATUTY NIERUCHOMOŚCI:</p><ul><li>cicha i zielona okolica</li><li>zielone tarasy na dachu budynku dla mieszkańców apartamentowca</li><li>przestronne części wspólne dla mieszkańców na ostatnim piętrze budynku</li><li>wysoka dostępność wszelkich usług w zasięgu spaceru</li><li>nowy budynek z windą</li><li>doskonały dojazd do centrum Warszawy oraz łatwy wyjazd na trasy wylotowe ze stolicy</li><li>komórka lokatorska na przechowanie nadmiarowych rzeczy (dodatkowo płatna)</li></ul><p></p><p>WYPOSAŻENIE MIESZKANIA:</p><ul><li>Rozkładana kanapa do spania</li><li>Duży aneks kuchenny</li><li>Nowe sprzęty AGD - zmywarka, piekarnik, płyta indukcyjna, pralkosuszarka</li><li>Szybki światłowodowy internet</li><li>2 duże szafy w zabudowie</li><li>Stolik do pracy i posiłków</li></ul><p></p><p>LOKALIZACJA:</p><p>Mieszkanie znajduje się w spokojnej, zielonej okolicy, ale jednocześnie w dobrym punkcie komunikacyjnym i rozbudowanej infrastrukturze. W pobliżu znajduje się min. restauracje, apteka, sklep spożywczy, biblioteka, park, lokale usługowe i gastronomiczne oraz markety budowlane i spożywcze.</p><p></p><p>Doskonała komunikacja z Centrum:</p><p>- dojazd samochodem do Pałacu Kultury zajmuje około 10-15 minut</p><p>- przystanek autobusowy - 100 m od budynku (linie 127, 178, 191, 228, N85)</p><p>- stacja PKP Włochy - 900 m</p><p>- Centrum Handlowe Blue City - 2,5 km</p><p></p><p>INWESTYCJA: Włoskie Tarasy</p><p>ADRES: ul. Popularna 60 (róg ul. Krańcowej), Warszawa</p><p>CENA: 3200zł /msc - w cenie czynsz administracyjny, media i szybki internet światłowodowy - żadnych dodatkowych kosztów.</p><p>KAUCJA: 3500zł</p><p>OKRES: ROK - do wakacji 2027</p><p></p><p>Zapraszam do kontaktu.</p><p></p><p>Niniejsze ogłoszenie nie stanowi oferty handlowej w rozumieniu przepisów art. 66 Kodeksu Cywilnego.</p><p>Podane dane mają charakter wyłącznie informacyjny.</p><p></p><p>ZADZWOŃ, Czekamy na telefon od Ciebie</p>",
-    "created_time": "2026-07-20T13:15:17+02:00",
-    "last_refresh_time": "2026-07-28T12:07:15+02:00",
-    "location": {
-      "city": {
-        "id": 17871,
-        "name": "Warszawa",
-        "normalized_name": "warszawa",
-        "_nodeId": "Y2l0eToxNzg3MQ=="
-      },
-      "district": {
-        "id": 357,
-        "name": "Włochy",
-        "normalized_name": null,
-        "_nodeId": "ZGlzdHJpY3Q6MzU3"
-      },
-      "region": {
-        "id": 2,
-        "name": "Mazowieckie",
-        "normalized_name": "mazowieckie",
-        "_nodeId": "cmVnaW9uOjI="
-      }
-    },
-    "photos": [
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/u6uz5s2vchfj2-PL/image;s={width}x{height}",
-        "height": 854,
-        "rotation": 0,
-        "width": 1280
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/myen0c1y5qc02-PL/image;s={width}x{height}",
-        "height": 720,
-        "rotation": 0,
-        "width": 1280
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/adlca6ocz5hb1-PL/image;s={width}x{height}",
-        "height": 854,
-        "rotation": 0,
-        "width": 1280
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/liqjdngo6otk1-PL/image;s={width}x{height}",
-        "height": 854,
-        "rotation": 0,
-        "width": 1280
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/3cikfikikq81-PL/image;s={width}x{height}",
-        "height": 854,
-        "rotation": 0,
-        "width": 1280
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/hjdjsiduis6x2-PL/image;s={width}x{height}",
-        "height": 854,
-        "rotation": 0,
-        "width": 1280
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/x1e140o7asph1-PL/image;s={width}x{height}",
-        "height": 854,
-        "rotation": 0,
-        "width": 1280
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/fhjnzbhgh4j73-PL/image;s={width}x{height}",
-        "height": 960,
-        "rotation": 0,
-        "width": 1280
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/j5xy366mebax1-PL/image;s={width}x{height}",
-        "height": 960,
-        "rotation": 0,
-        "width": 1280
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/hyebw6jjxluq2-PL/image;s={width}x{height}",
-        "height": 960,
-        "rotation": 0,
-        "width": 1280
-      }
-    ],
-    "params": [
-      {
-        "key": "price",
-        "name": "Cena",
-        "type": "price",
-        "value": {
-          "__typename": "PriceParam",
-          "value": 2800,
-          "type": "price",
-          "negotiable": false,
-          "label": "2 800 zł",
-          "currency": "PLN",
-          "converted_value": null,
-          "converted_currency": null,
-          "arranged": false,
-          "budget": false
-        }
-      },
-      {
-        "key": "floor_select",
-        "name": "Poziom",
-        "type": "select",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "floor_2",
-          "label": "2"
-        }
-      },
-      {
-        "key": "furniture",
-        "name": "Umeblowane",
-        "type": "select",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "yes",
-          "label": "Tak"
-        }
-      },
-      {
-        "key": "builttype",
-        "name": "Rodzaj zabudowy",
-        "type": "select",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "apartamentowiec",
-          "label": "Apartamentowiec"
-        }
-      },
-      {
-        "key": "m",
-        "name": "Powierzchnia",
-        "type": "input",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "21",
-          "label": "21 m²"
-        }
-      },
-      {
-        "key": "rooms",
-        "name": "Liczba pokoi",
-        "type": "select",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "one",
-          "label": "Kawalerka"
-        }
-      },
-      {
-        "key": "rent",
-        "name": "Czynsz (dodatkowo)",
-        "type": "input",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "400",
-          "label": "400 zł"
-        }
-      }
-    ],
-    "contact": {
-      "courier": false,
-      "chat": true,
-      "name": "Paweł",
-      "negotiation": false,
-      "phone": true
-    },
-    "user": {
-      "id": 21117567,
-      "uuid": "ffce0e06-25f9-4d4f-9a59-ae1477b57dce",
-      "_nodeId": "e46c1463345850fac18b7370212a99b0e142410d",
-      "about": "",
-      "b2c_business_page": false,
-      "company_name": "",
-      "created": "2014-05-23T01:05:01+02:00",
-      "is_online": true,
-      "last_seen": "2026-08-03T12:30:25+02:00",
-      "name": "Paweł",
-      "other_ads_enabled": true,
-      "photo": null,
-      "seller_type": null,
-      "social_network_account_type": null,
-      "verification": {
-        "status": "none"
-      }
-    },
-    "map": {
-      "lat": 52.202847,
-      "lon": 20.927975,
-      "radius": 0,
-      "show_detailed": true,
-      "zoom": 15
-    },
-    "district_name": "Włochy",
-    "rent_price": 2800.0,
-    "admin_rent": 400.0,
-    "total_price": 3200.0,
-    "found_at": "2026-08-03T10:33:37.830630+00:00",
-    "ai_analysis": {
-      "ai_total_price": 3200.0,
-      "ai_notes": "Cena zawiera czynsz administracyjny, media i szybki internet światłowodowy. Kaucja wynosi 3500 zł.",
-      "media_cost": 0.0,
-      "deposit": "3500 zł",
-      "lease_type": "zwykły"
     },
     "status": "new",
     "notes": ""
@@ -41329,472 +40683,6 @@
     "status": "new",
     "notes": ""
   },
-  "1088378170": {
-    "id": "1088378170",
-    "title": "Górny Mokotów - kawalerka 35m2",
-    "url": "https://www.olx.pl/d/oferta/gorny-mokotow-kawalerka-35m2-CID3-ID1bEISC.html",
-    "description": "Do wynajęcia mieszkanie Mokotów ul. Jana Bytnara Rudego- 35m2, kawalerka, pokój + osobna widna kuchnia, standard wyposażenia Ikea. Mieszkanie dla max 2 osób, bez zwierząt. Opłaty 2300zł+ 700zł+ opłaty za prąd i ewentualnie Internet. Kontakt przez e-mail",
-    "created_time": "2026-07-30T15:14:07+02:00",
-    "last_refresh_time": "2026-07-30T15:16:37+02:00",
-    "location": {
-      "city": {
-        "id": 17871,
-        "name": "Warszawa",
-        "normalized_name": "warszawa",
-        "_nodeId": "Y2l0eToxNzg3MQ=="
-      },
-      "district": {
-        "id": 353,
-        "name": "Mokotów",
-        "normalized_name": null,
-        "_nodeId": "ZGlzdHJpY3Q6MzUz"
-      },
-      "region": {
-        "id": 2,
-        "name": "Mazowieckie",
-        "normalized_name": "mazowieckie",
-        "_nodeId": "cmVnaW9uOjI="
-      }
-    },
-    "photos": [
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/52jvx3vhehcy-PL/image;s={width}x{height}",
-        "height": 1000,
-        "rotation": 0,
-        "width": 750
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/mlt5dki34ls9-PL/image;s={width}x{height}",
-        "height": 1000,
-        "rotation": 0,
-        "width": 750
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/w5xi58rkmzka3-PL/image;s={width}x{height}",
-        "height": 1000,
-        "rotation": 0,
-        "width": 750
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/c449257djly82-PL/image;s={width}x{height}",
-        "height": 1000,
-        "rotation": 0,
-        "width": 750
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/620chqq06pjm2-PL/image;s={width}x{height}",
-        "height": 1000,
-        "rotation": 0,
-        "width": 750
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/hw7oa1jhf4eh-PL/image;s={width}x{height}",
-        "height": 1000,
-        "rotation": 0,
-        "width": 750
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/2npbg0eyuu931-PL/image;s={width}x{height}",
-        "height": 1000,
-        "rotation": 0,
-        "width": 750
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/jbv240lncx0e1-PL/image;s={width}x{height}",
-        "height": 1000,
-        "rotation": 0,
-        "width": 750
-      }
-    ],
-    "params": [
-      {
-        "key": "price",
-        "name": "Cena",
-        "type": "price",
-        "value": {
-          "__typename": "PriceParam",
-          "value": 2300,
-          "type": "price",
-          "negotiable": false,
-          "label": "2 300 zł",
-          "currency": "PLN",
-          "converted_value": null,
-          "converted_currency": null,
-          "arranged": false,
-          "budget": false
-        }
-      },
-      {
-        "key": "pets",
-        "name": "Zwierzęta",
-        "type": "select",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "Nie",
-          "label": "Nie"
-        }
-      },
-      {
-        "key": "winda",
-        "name": "Winda",
-        "type": "select",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "Nie",
-          "label": "Nie"
-        }
-      },
-      {
-        "key": "parking",
-        "name": "Parking",
-        "type": "checkboxes",
-        "value": {
-          "__typename": "CheckboxesParam",
-          "label": "brak",
-          "checkboxParamKey": [
-            "brak"
-          ]
-        }
-      },
-      {
-        "key": "floor_select",
-        "name": "Poziom",
-        "type": "select",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "floor_1",
-          "label": "1"
-        }
-      },
-      {
-        "key": "furniture",
-        "name": "Umeblowane",
-        "type": "select",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "yes",
-          "label": "Tak"
-        }
-      },
-      {
-        "key": "builttype",
-        "name": "Rodzaj zabudowy",
-        "type": "select",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "kamienica",
-          "label": "Kamienica"
-        }
-      },
-      {
-        "key": "m",
-        "name": "Powierzchnia",
-        "type": "input",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "35",
-          "label": "35 m²"
-        }
-      },
-      {
-        "key": "rooms",
-        "name": "Liczba pokoi",
-        "type": "select",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "one",
-          "label": "Kawalerka"
-        }
-      },
-      {
-        "key": "rent",
-        "name": "Czynsz (dodatkowo)",
-        "type": "input",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "700",
-          "label": "700 zł"
-        }
-      }
-    ],
-    "contact": {
-      "courier": false,
-      "chat": true,
-      "name": "Bogusia",
-      "negotiation": false,
-      "phone": false
-    },
-    "user": {
-      "id": 23751751,
-      "uuid": "7acb5912-59d3-479f-9fe2-7f21a1fe7b51",
-      "_nodeId": "93faa4b8614205e6fdc905f6e3051b9be36fc1f7",
-      "about": "",
-      "b2c_business_page": false,
-      "company_name": "",
-      "created": "2014-07-09T09:20:33+02:00",
-      "is_online": false,
-      "last_seen": "2026-07-30T20:02:07+02:00",
-      "name": "Bogusia",
-      "other_ads_enabled": true,
-      "photo": "https://img-resizer.prd.01.eu-west-1.eu.olx.org/img-eu-olxpl-production/1220314368_1_100x100.jpg",
-      "seller_type": null,
-      "social_network_account_type": "facebook",
-      "verification": {
-        "status": "none"
-      }
-    },
-    "map": {
-      "lat": 52.19282,
-      "lon": 21.03232,
-      "radius": 7,
-      "show_detailed": false,
-      "zoom": 13
-    },
-    "district_name": "Mokotów",
-    "rent_price": 2300.0,
-    "admin_rent": 700.0,
-    "total_price": 3000.0,
-    "found_at": "2026-08-03T17:18:39.609224+00:00",
-    "ai_analysis": {
-      "ai_total_price": 3000.0,
-      "ai_notes": "Kwota wynika z podanych w ogłoszeniu czynszu najmu i administracyjnego. Media są w cenie 200zł. Brak informacji o kaucji i rodzaju najmu.",
-      "media_cost": 200.0,
-      "deposit": "Brak info",
-      "lease_type": "Brak info"
-    },
-    "status": "new",
-    "notes": ""
-  },
-  "1086167455": {
-    "id": "1086167455",
-    "title": "Kawalerka Mokotów Metro Pola Mokotowskie czynsz w cenie najmu",
-    "url": "https://www.olx.pl/d/oferta/kawalerka-mokotow-metro-pola-mokotowskie-czynsz-w-cenie-najmu-CID3-ID1bwrLW.html",
-    "description": "Bardzo dobra lokalizacja, (Mokotów między ul. Batorego a ul. Wiśniową) dogodny dojazd do każdego punktu w mieście, 1 minut do Metra Pole Mokotowskie. Mieszkanie świeżo po kapitalnym remoncie, nowa kuchnia, łazienka, gładzie na scianach,, wymieniona elektryka, glazura terakota, w pokoju nowa wykładzina. Całe wyposażenie(sztućce, talerze, szklanki, czajnik) oraz AGD nowe. Powierzchnia mieszkania 30m2, plus balkonu 5m2 <br />\nKuchnia: glazura, terakota, lodówka, szafki kuchenne, okap nad kuchnią, prlaka w zabudowie. <br />\nNa podłodze w łazience terakota, glazura, wanna z prysznicem, umywalka z lustrem, pralka, Wc w zabudowie typu Geberit<br />\nW przedpokoju, Nowa szafa wnękowa, lustro, wieszak na ubrania, na podłodze nowa wykładzina. <br />\nW  pokoju gładzie na scianach wykładzina dywanowa, stół, krzesła, . (Nie są to dwa typowe pokoje jest to  pokój z wnęką na sypialnie.<br />\nW mieszkaniu wymieniono cała elektryke, gniazka właczniki, zabezpieczenie różnicowo prądowe<br />\nDuży balkon, przepiękny widok na panoramę Warszawy. Przy budynku parking.  Wolne Tel. 19.07.2026r. kontaktowy (komórka) 79********09. <br />\nCena najmu 2500 zl plus  czynasz adm. 600 zl oraz opłaty licznikowe. Pakiet rabatory przy umowie min 12 miesiecy.  Wynajm tylko na umowe, platnosc tylko kontem.  Kaucja 5000zł do rozliczenia w dniu wygasniecia umowy najmu.",
-    "created_time": "2026-07-19T09:01:43+02:00",
-    "last_refresh_time": "2026-07-19T09:04:15+02:00",
-    "location": {
-      "city": {
-        "id": 17871,
-        "name": "Warszawa",
-        "normalized_name": "warszawa",
-        "_nodeId": "Y2l0eToxNzg3MQ=="
-      },
-      "district": {
-        "id": 353,
-        "name": "Mokotów",
-        "normalized_name": null,
-        "_nodeId": "ZGlzdHJpY3Q6MzUz"
-      },
-      "region": {
-        "id": 2,
-        "name": "Mazowieckie",
-        "normalized_name": "mazowieckie",
-        "_nodeId": "cmVnaW9uOjI="
-      }
-    },
-    "photos": [
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/gpjrra7xd9qd3-PL/image;s={width}x{height}",
-        "height": 4000,
-        "rotation": 0,
-        "width": 3000
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/big8kazo5gvw1-PL/image;s={width}x{height}",
-        "height": 4000,
-        "rotation": 0,
-        "width": 3000
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/fk035uq28559-PL/image;s={width}x{height}",
-        "height": 4000,
-        "rotation": 0,
-        "width": 3000
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/9mu37wbmm5lb3-PL/image;s={width}x{height}",
-        "height": 4000,
-        "rotation": 0,
-        "width": 3000
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/a05vsu37s6e7-PL/image;s={width}x{height}",
-        "height": 3000,
-        "rotation": 0,
-        "width": 4000
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/huhi8o5f5vjb1-PL/image;s={width}x{height}",
-        "height": 3000,
-        "rotation": 0,
-        "width": 4000
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/m66cib2skrej1-PL/image;s={width}x{height}",
-        "height": 3125,
-        "rotation": 0,
-        "width": 4166
-      }
-    ],
-    "params": [
-      {
-        "key": "price",
-        "name": "Cena",
-        "type": "price",
-        "value": {
-          "__typename": "PriceParam",
-          "value": 2500,
-          "type": "arranged",
-          "negotiable": true,
-          "label": "2 500 zł",
-          "currency": "PLN",
-          "converted_value": null,
-          "converted_currency": null,
-          "arranged": true,
-          "budget": false
-        }
-      },
-      {
-        "key": "pets",
-        "name": "Zwierzęta",
-        "type": "select",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "Nie",
-          "label": "Nie"
-        }
-      },
-      {
-        "key": "winda",
-        "name": "Winda",
-        "type": "select",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "Tak",
-          "label": "Tak"
-        }
-      },
-      {
-        "key": "parking",
-        "name": "Parking",
-        "type": "checkboxes",
-        "value": {
-          "__typename": "CheckboxesParam",
-          "label": "przynależne na ulicy",
-          "checkboxParamKey": [
-            "przynależne na ulicy"
-          ]
-        }
-      },
-      {
-        "key": "floor_select",
-        "name": "Poziom",
-        "type": "select",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "floor_11",
-          "label": "Powyżej 10"
-        }
-      },
-      {
-        "key": "furniture",
-        "name": "Umeblowane",
-        "type": "select",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "yes",
-          "label": "Tak"
-        }
-      },
-      {
-        "key": "builttype",
-        "name": "Rodzaj zabudowy",
-        "type": "select",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "blok",
-          "label": "Blok"
-        }
-      },
-      {
-        "key": "m",
-        "name": "Powierzchnia",
-        "type": "input",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "30",
-          "label": "30 m²"
-        }
-      },
-      {
-        "key": "rooms",
-        "name": "Liczba pokoi",
-        "type": "select",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "one",
-          "label": "Kawalerka"
-        }
-      },
-      {
-        "key": "rent",
-        "name": "Czynsz (dodatkowo)",
-        "type": "input",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "600",
-          "label": "600 zł"
-        }
-      }
-    ],
-    "contact": {
-      "courier": false,
-      "chat": true,
-      "name": "Tomasz",
-      "negotiation": true,
-      "phone": true
-    },
-    "user": {
-      "id": 344405733,
-      "uuid": "296683f8-3f23-40a4-8460-ea4642d155e0",
-      "_nodeId": "3685b633e4e138c09585b668308feda0eeacb100",
-      "about": "",
-      "b2c_business_page": false,
-      "company_name": "",
-      "created": "2019-01-24T12:59:13+01:00",
-      "is_online": false,
-      "last_seen": "2026-07-29T08:44:55+02:00",
-      "name": "Tomasz",
-      "other_ads_enabled": true,
-      "photo": null,
-      "seller_type": null,
-      "social_network_account_type": null,
-      "verification": {
-        "status": "none"
-      }
-    },
-    "map": {
-      "lat": 52.19282,
-      "lon": 21.03232,
-      "radius": 7,
-      "show_detailed": false,
-      "zoom": 13
-    },
-    "district_name": "Mokotów",
-    "rent_price": 2500.0,
-    "admin_rent": 600.0,
-    "total_price": 3100.0,
-    "found_at": "2026-08-03T17:18:49.570901+00:00",
-    "ai_analysis": {
-      "ai_total_price": 3100.0,
-      "ai_notes": "Kwota wynika z czynszu najmu (2500 zł) i czynszu administracyjnego (600 zł), media są w cenie, kaucja wynosi 5000 zł.",
-      "media_cost": 200.0,
-      "deposit": "5000 zł",
-      "lease_type": "zwykły"
-    },
-    "status": "new",
-    "notes": ""
-  },
   "1088613741": {
     "id": "1088613741",
     "title": "Okazja !!! Bez prowizji kawalerka w świetnej lokalizacji !!!",
@@ -44366,220 +43254,6 @@
       "ai_notes": "Całkowita cena to 3200 zł, w tym 2600 zł czynszu najmu i 600 zł opłat administracyjnych. Internet jest w cenie. Możliwe wynajęcie platformy parkingowej za 300 zł miesięcznie. Kaucja zwrotna, jednorazowa.",
       "media_cost": 600.0,
       "deposit": "Kaucja zwrotna, jednorazowa, płatna przy podpisaniu umowy.",
-      "lease_type": "zwykły"
-    },
-    "status": "new",
-    "notes": ""
-  },
-  "1087263391": {
-    "id": "1087263391",
-    "title": "Rezerwacja Kawalerka na Woli Metro Młynów od września",
-    "url": "https://www.olx.pl/d/oferta/rezerwacja-kawalerka-na-woli-metro-mlynow-od-wrzesnia-CID3-ID1bA2Sj.html",
-    "description": "Rezerwacja do 03.08.2026<br />\nDo wynajęcia kawalerka na Woli ul.Mikołaja Wierzynka o powierzchni 25 m. Mieszkanie jasne i przytulne, z balkonem, po generalnym remoncie w 2025 roku. Cicha okolica z dobrym dojazdem do  Centrum. Metro Młynów 3 minuty pieszo. Mieszkanie w pełni wyposażone w meble i AGD( pralka, lodówka, płyta grzewcza,piekarnik, mikrofalówka, czajnik, talerze,sztućce,garnki).<br />\n<br />\nDo mieszkania przynależy piwnica.<br />\nMieszkanie dostępne od września.<br />\nNie akceptujemy zwierząt.<br />\nUmowa w formie aktu notarialnego na minimum rok. Kaucja 3000 zł<br />\nOpłaty : <br />\nWynajem: 2500 zł<br />\nCzynsz administracyjny :650 zł<br />\nOpłaty licznikowe(prąd)<br />\nKontakt : Sylwia 50*******72",
-    "created_time": "2026-07-24T19:15:13+02:00",
-    "last_refresh_time": "2026-07-24T19:17:32+02:00",
-    "location": {
-      "city": {
-        "id": 17871,
-        "name": "Warszawa",
-        "normalized_name": "warszawa",
-        "_nodeId": "Y2l0eToxNzg3MQ=="
-      },
-      "district": {
-        "id": 359,
-        "name": "Wola",
-        "normalized_name": null,
-        "_nodeId": "ZGlzdHJpY3Q6MzU5"
-      },
-      "region": {
-        "id": 2,
-        "name": "Mazowieckie",
-        "normalized_name": "mazowieckie",
-        "_nodeId": "cmVnaW9uOjI="
-      }
-    },
-    "photos": [
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/qhewwt2pvruc2-PL/image;s={width}x{height}",
-        "height": 734,
-        "rotation": 0,
-        "width": 1632
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/45mrdklfb89-PL/image;s={width}x{height}",
-        "height": 734,
-        "rotation": 0,
-        "width": 1632
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/fua1dwcxlqso2-PL/image;s={width}x{height}",
-        "height": 734,
-        "rotation": 0,
-        "width": 1632
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/wj3zovogx2o23-PL/image;s={width}x{height}",
-        "height": 1632,
-        "rotation": 0,
-        "width": 734
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/vj673p05zmdd-PL/image;s={width}x{height}",
-        "height": 1632,
-        "rotation": 0,
-        "width": 734
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/r9cpx73x801-PL/image;s={width}x{height}",
-        "height": 1632,
-        "rotation": 0,
-        "width": 734
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/9z4u0w4enjb21-PL/image;s={width}x{height}",
-        "height": 1632,
-        "rotation": 0,
-        "width": 734
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/bcgdefatz1i1-PL/image;s={width}x{height}",
-        "height": 734,
-        "rotation": 0,
-        "width": 1632
-      }
-    ],
-    "params": [
-      {
-        "key": "price",
-        "name": "Cena",
-        "type": "price",
-        "value": {
-          "__typename": "PriceParam",
-          "value": 2500,
-          "type": "price",
-          "negotiable": false,
-          "label": "2 500 zł",
-          "currency": "PLN",
-          "converted_value": null,
-          "converted_currency": null,
-          "arranged": false,
-          "budget": false
-        }
-      },
-      {
-        "key": "pets",
-        "name": "Zwierzęta",
-        "type": "select",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "Nie",
-          "label": "Nie"
-        }
-      },
-      {
-        "key": "floor_select",
-        "name": "Poziom",
-        "type": "select",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "floor_2",
-          "label": "2"
-        }
-      },
-      {
-        "key": "furniture",
-        "name": "Umeblowane",
-        "type": "select",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "yes",
-          "label": "Tak"
-        }
-      },
-      {
-        "key": "builttype",
-        "name": "Rodzaj zabudowy",
-        "type": "select",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "blok",
-          "label": "Blok"
-        }
-      },
-      {
-        "key": "m",
-        "name": "Powierzchnia",
-        "type": "input",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "25",
-          "label": "25 m²"
-        }
-      },
-      {
-        "key": "rooms",
-        "name": "Liczba pokoi",
-        "type": "select",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "one",
-          "label": "Kawalerka"
-        }
-      },
-      {
-        "key": "rent",
-        "name": "Czynsz (dodatkowo)",
-        "type": "input",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "650",
-          "label": "650 zł"
-        }
-      }
-    ],
-    "contact": {
-      "courier": false,
-      "chat": true,
-      "name": "Sylwia",
-      "negotiation": false,
-      "phone": true
-    },
-    "user": {
-      "id": 27669823,
-      "uuid": "04269852-75b1-463e-9f72-183ffd672dd5",
-      "_nodeId": "0bacd970a66059afd52d4b7549be86700e7135d8",
-      "about": "",
-      "b2c_business_page": false,
-      "company_name": "",
-      "created": "2014-12-17T23:09:16+01:00",
-      "is_online": false,
-      "last_seen": "2026-07-26T16:09:10+02:00",
-      "name": "Sylwia",
-      "other_ads_enabled": true,
-      "photo": null,
-      "seller_type": null,
-      "social_network_account_type": null,
-      "verification": {
-        "status": "none"
-      }
-    },
-    "map": {
-      "lat": 52.23725,
-      "lon": 20.96608,
-      "radius": 7,
-      "show_detailed": false,
-      "zoom": 13
-    },
-    "district_name": "Wola",
-    "rent_price": 2500.0,
-    "admin_rent": 650.0,
-    "total_price": 3150.0,
-    "found_at": "2026-08-03T17:21:56.953295+00:00",
-    "ai_analysis": {
-      "ai_total_price": 3150.0,
-      "ai_notes": "Całkowita cena wynajmu to 3150,0 zł (2500,0 zł + 650,0 zł + 200,0 zł). Kaucja wynosi 3000 zł. Mieszkanie dostępne od września. Nie akceptujemy zwierząt.",
-      "media_cost": 200.0,
-      "deposit": "3000 zł",
       "lease_type": "zwykły"
     },
     "status": "new",
@@ -53788,220 +52462,6 @@
     "status": "new",
     "notes": ""
   },
-  "1075289009": {
-    "id": "1075289009",
-    "title": "Rezerwacja !  WARSZAWA TOP Centrum,  RONDO ONZ, metro, 2 pokoje",
-    "url": "https://www.olx.pl/d/oferta/rezerwacja-warszawa-top-centrum-rondo-onz-metro-2-pokoje-CID3-ID1aLNN7.html",
-    "description": "Umowa na najem okazjonalny. Do wynajęcia 28m mieszkanie na 15. piętrze przy Rondzie ONZ (aleja Jana Pawła II 20). W skład wchodzi pokój z aneksem kuchennym, stołem i krzesłami, rozkładaną kanapą, komodą z szufladami. W aneksie pełnowymiarowa lodówka, mikrofalówka oraz kuchnia gazowa wraz z piekarnikiem. W łazience wanna, pralka + 2 szafki. W drugim pokoju biurko, łóżko pojedyncze oraz duża szafa w zabudowie. Dodatkowo w cenie najmu schowek na półpiętrze o wielkości 5m2, np. na rzeczy zimowe, rower itp. Mieszkanie niedawno przeszło generalny remont. Opłaty to 3200 zł miesięcznie + prąd, gaz (woda, ogrzewanie w czynszu rozliczane 2 x w roku). Kaucja 3200 zł. Mieszkanie wolne od już. Zwierzęta wykluczone, mieszkanie dla osób niepalących.<br />\nKontakt wyłącznie w języku polskim. <br />\nAgencje, proszę nie dzwonić!",
-    "created_time": "2026-05-22T13:43:03+02:00",
-    "last_refresh_time": "2026-07-30T16:54:35+02:00",
-    "location": {
-      "city": {
-        "id": 17871,
-        "name": "Warszawa",
-        "normalized_name": "warszawa",
-        "_nodeId": "Y2l0eToxNzg3MQ=="
-      },
-      "district": {
-        "id": 351,
-        "name": "Śródmieście",
-        "normalized_name": null,
-        "_nodeId": "ZGlzdHJpY3Q6MzUx"
-      },
-      "region": {
-        "id": 2,
-        "name": "Mazowieckie",
-        "normalized_name": "mazowieckie",
-        "_nodeId": "cmVnaW9uOjI="
-      }
-    },
-    "photos": [
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/nasvmcngj3if2-PL/image;s={width}x{height}",
-        "height": 2040,
-        "rotation": 0,
-        "width": 1530
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/zh338r08tm88-PL/image;s={width}x{height}",
-        "height": 2040,
-        "rotation": 0,
-        "width": 1530
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/eh8dpju4c1sm3-PL/image;s={width}x{height}",
-        "height": 2040,
-        "rotation": 0,
-        "width": 1530
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/3hi4ctrlul86-PL/image;s={width}x{height}",
-        "height": 2040,
-        "rotation": 0,
-        "width": 1530
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/lj4cc1j2r3nr-PL/image;s={width}x{height}",
-        "height": 2040,
-        "rotation": 0,
-        "width": 1530
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/g2o7fvoo9i9x1-PL/image;s={width}x{height}",
-        "height": 2040,
-        "rotation": 0,
-        "width": 1530
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/qho2s3njrcaa-PL/image;s={width}x{height}",
-        "height": 2040,
-        "rotation": 0,
-        "width": 1530
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/dj9fpe61l0082-PL/image;s={width}x{height}",
-        "height": 2040,
-        "rotation": 0,
-        "width": 1530
-      }
-    ],
-    "params": [
-      {
-        "key": "price",
-        "name": "Cena",
-        "type": "price",
-        "value": {
-          "__typename": "PriceParam",
-          "value": 3200,
-          "type": "price",
-          "negotiable": false,
-          "label": "3 200 zł",
-          "currency": "PLN",
-          "converted_value": null,
-          "converted_currency": null,
-          "arranged": false,
-          "budget": false
-        }
-      },
-      {
-        "key": "pets",
-        "name": "Zwierzęta",
-        "type": "select",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "Nie",
-          "label": "Nie"
-        }
-      },
-      {
-        "key": "winda",
-        "name": "Winda",
-        "type": "select",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "Tak",
-          "label": "Tak"
-        }
-      },
-      {
-        "key": "floor_select",
-        "name": "Poziom",
-        "type": "select",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "floor_11",
-          "label": "Powyżej 10"
-        }
-      },
-      {
-        "key": "furniture",
-        "name": "Umeblowane",
-        "type": "select",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "yes",
-          "label": "Tak"
-        }
-      },
-      {
-        "key": "builttype",
-        "name": "Rodzaj zabudowy",
-        "type": "select",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "blok",
-          "label": "Blok"
-        }
-      },
-      {
-        "key": "m",
-        "name": "Powierzchnia",
-        "type": "input",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "30",
-          "label": "30 m²"
-        }
-      },
-      {
-        "key": "rooms",
-        "name": "Liczba pokoi",
-        "type": "select",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "two",
-          "label": "2 pokoje"
-        }
-      }
-    ],
-    "contact": {
-      "courier": false,
-      "chat": true,
-      "name": "Katarzyna",
-      "negotiation": false,
-      "phone": true
-    },
-    "user": {
-      "id": 272411021,
-      "uuid": "23c055b2-0931-4598-a24c-37a81b81e75f",
-      "_nodeId": "85021fa74d8a5cc02b5a75131585ef2ed9061f17",
-      "about": "",
-      "b2c_business_page": false,
-      "company_name": "",
-      "created": "2018-08-03T10:22:07+02:00",
-      "is_online": false,
-      "last_seen": "2026-07-31T09:33:37+02:00",
-      "name": "Katarzyna",
-      "other_ads_enabled": true,
-      "photo": null,
-      "seller_type": null,
-      "social_network_account_type": null,
-      "verification": {
-        "status": "none"
-      }
-    },
-    "map": {
-      "lat": 52.23474,
-      "lon": 21.01522,
-      "radius": 7,
-      "show_detailed": false,
-      "zoom": 13
-    },
-    "district_name": "Śródmieście",
-    "rent_price": 3200.0,
-    "admin_rent": 0.0,
-    "total_price": 3200.0,
-    "found_at": "2026-08-04T08:33:12.931644+00:00",
-    "ai_analysis": {
-      "ai_total_price": 3400.0,
-      "ai_notes": "Kwota 3400 zł to suma czynszu najmu 3200 zł i opłat mediów 200 zł. Kaucja wynosi 3200 zł.",
-      "media_cost": 200.0,
-      "deposit": "3200 zł",
-      "lease_type": "najem okazjonalny"
-    },
-    "status": "new",
-    "notes": ""
-  },
   "1078804443": {
     "id": "1078804443",
     "title": "Skorosze do wynajecia 2 pokoje",
@@ -56163,232 +54623,6 @@
       "media_cost": 200.0,
       "deposit": "3500 zł",
       "lease_type": "zwykły"
-    },
-    "status": "new",
-    "notes": ""
-  },
-  "1087646000": {
-    "id": "1087646000",
-    "title": "Nowoczesne 2-pokojowe mieszkanie",
-    "url": "https://www.olx.pl/d/oferta/nowoczesne-2-pokojowe-mieszkanie-CID3-ID1bBEpq.html",
-    "description": "Nowoczesne 2-pokojowe mieszkanie<br />\n<br />\n * Warszawa, Włochy – ul. Rakowska<br />\n<br />\nNajważniejsze informacje<br />\n<br />\n* 3. piętro z windą<br />\n<br />\n* 40 m²<br />\n<br />\n* Balkon<br />\n<br />\n* W pełni umeblowane i wyposażone<br />\n<br />\n* Dostępne od września<br />\n<br />\nMieszkanie<br />\n<br />\n* Salon z aneksem kuchennym<br />\n<br />\n* Oddzielna sypialnia<br />\n<br />\n* Łazienka z prysznicem<br />\n<br />\n* Przedpokój z miejscem do przechowywania<br />\n<br />\n* Balkon<br />\n<br />\n* W pełni umeblowane i wyposażone<br />\n<br />\n* Gotowe do zamieszkania<br />\n<br />\nLokalizacja<br />\n<br />\nŚwietna lokalizacja na pograniczu Włoch i Ochoty.<br />\n<br />\nW pobliżu znajdują się sklepy, restauracje, kawiarnie, tereny zielone oraz przystanki autobusowe i tramwajowe, zapewniające szybki dojazd do centrum Warszawy.<br />\n<br />\nWarunki najmu<br />\n<br />\n* Cena najmu: 3 300 zł / miesiąc<br />\n<br />\n* Dodatkowo: czynsz administracyjny do wspólnoty oraz media według zużycia<br />\n<br />\n* Kaucja: jednomiesięczny czynsz<br />\n<br />\n* Najem okazjonalny<br />\n<br />\n* Akceptuję zwierzęta<br />\n<br />\n* Wynajem bezpośrednio od właściciela<br />\n<br />\nCena<br />\n<br />\n3 300 zł / miesiąc<br />\n<br />\n* czynsz do wspólnoty + media według zużycia",
-    "created_time": "2026-07-27T11:19:37+02:00",
-    "last_refresh_time": "2026-07-27T11:22:02+02:00",
-    "location": {
-      "city": {
-        "id": 17871,
-        "name": "Warszawa",
-        "normalized_name": "warszawa",
-        "_nodeId": "Y2l0eToxNzg3MQ=="
-      },
-      "district": {
-        "id": 357,
-        "name": "Włochy",
-        "normalized_name": null,
-        "_nodeId": "ZGlzdHJpY3Q6MzU3"
-      },
-      "region": {
-        "id": 2,
-        "name": "Mazowieckie",
-        "normalized_name": "mazowieckie",
-        "_nodeId": "cmVnaW9uOjI="
-      }
-    },
-    "photos": [
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/hk70t36azoso3-PL/image;s={width}x{height}",
-        "height": 1086,
-        "rotation": 0,
-        "width": 1448
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/mg7mjpb8cqg42-PL/image;s={width}x{height}",
-        "height": 2048,
-        "rotation": 0,
-        "width": 1536
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/zybpsb124jp13-PL/image;s={width}x{height}",
-        "height": 2048,
-        "rotation": 0,
-        "width": 1536
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/1qtrgyrd871n3-PL/image;s={width}x{height}",
-        "height": 2048,
-        "rotation": 0,
-        "width": 1536
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/m24kkcpphz7s3-PL/image;s={width}x{height}",
-        "height": 2048,
-        "rotation": 0,
-        "width": 1536
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/nr71a3pc2asi1-PL/image;s={width}x{height}",
-        "height": 2048,
-        "rotation": 0,
-        "width": 1536
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/cjqivhr1ztk01-PL/image;s={width}x{height}",
-        "height": 1200,
-        "rotation": 0,
-        "width": 1600
-      },
-      {
-        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/8aejm2tev6d73-PL/image;s={width}x{height}",
-        "height": 1086,
-        "rotation": 0,
-        "width": 1448
-      }
-    ],
-    "params": [
-      {
-        "key": "price",
-        "name": "Cena",
-        "type": "price",
-        "value": {
-          "__typename": "PriceParam",
-          "value": 3300,
-          "type": "price",
-          "negotiable": false,
-          "label": "3 300 zł",
-          "currency": "PLN",
-          "converted_value": null,
-          "converted_currency": null,
-          "arranged": false,
-          "budget": false
-        }
-      },
-      {
-        "key": "pets",
-        "name": "Zwierzęta",
-        "type": "select",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "Tak",
-          "label": "Tak"
-        }
-      },
-      {
-        "key": "winda",
-        "name": "Winda",
-        "type": "select",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "Tak",
-          "label": "Tak"
-        }
-      },
-      {
-        "key": "parking",
-        "name": "Parking",
-        "type": "checkboxes",
-        "value": {
-          "__typename": "CheckboxesParam",
-          "label": "brak",
-          "checkboxParamKey": [
-            "brak"
-          ]
-        }
-      },
-      {
-        "key": "floor_select",
-        "name": "Poziom",
-        "type": "select",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "floor_3",
-          "label": "3"
-        }
-      },
-      {
-        "key": "furniture",
-        "name": "Umeblowane",
-        "type": "select",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "yes",
-          "label": "Tak"
-        }
-      },
-      {
-        "key": "builttype",
-        "name": "Rodzaj zabudowy",
-        "type": "select",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "blok",
-          "label": "Blok"
-        }
-      },
-      {
-        "key": "m",
-        "name": "Powierzchnia",
-        "type": "input",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "40",
-          "label": "40 m²"
-        }
-      },
-      {
-        "key": "rooms",
-        "name": "Liczba pokoi",
-        "type": "select",
-        "value": {
-          "__typename": "GenericParam",
-          "key": "two",
-          "label": "2 pokoje"
-        }
-      }
-    ],
-    "contact": {
-      "courier": false,
-      "chat": true,
-      "name": "Jarek",
-      "negotiation": false,
-      "phone": true
-    },
-    "user": {
-      "id": 2553286671,
-      "uuid": "2a5c3f5e-031f-4fe3-97fa-66d48b61575a",
-      "_nodeId": "18ecfc274d9514d6ff679407e4a7de7666b2d28a",
-      "about": "",
-      "b2c_business_page": false,
-      "company_name": "",
-      "created": "2026-07-27T11:05:24+02:00",
-      "is_online": false,
-      "last_seen": "2026-07-27T11:19:37+02:00",
-      "name": "Ttrt",
-      "other_ads_enabled": true,
-      "photo": null,
-      "seller_type": null,
-      "social_network_account_type": null,
-      "verification": {
-        "status": "none"
-      }
-    },
-    "map": {
-      "lat": 52.199856,
-      "lon": 20.953875,
-      "radius": 7,
-      "show_detailed": false,
-      "zoom": 13
-    },
-    "district_name": "Włochy",
-    "rent_price": 3300.0,
-    "admin_rent": 0.0,
-    "total_price": 3300.0,
-    "found_at": "2026-08-04T08:34:53.320856+00:00",
-    "ai_analysis": {
-      "ai_total_price": 3300.0,
-      "ai_notes": "Kwota obejmuje tylko czynsz najmu. Dodatkowo płacisz czynsz administracyjny i media według zużycia. Kaucją jest jednomiesięczny czynsz.",
-      "media_cost": 200.0,
-      "deposit": "jednomiesięczny czynsz",
-      "lease_type": "najem okazjonalny"
     },
     "status": "new",
     "notes": ""
@@ -63343,6 +61577,458 @@
       "media_cost": 0.0,
       "deposit": "Brak info",
       "lease_type": "zwykły"
+    },
+    "status": "new",
+    "notes": ""
+  },
+  "1082414075": {
+    "id": "1082414075",
+    "title": "Wynajmę mieszkanie 47,7 m2, dwupokojowe, Mokotów, ul. Łukowa, Blisko SGGW, Łazarski, autobus spod domu, Metro, Biedronka, Lidl. Najem okazjonalny.",
+    "url": "https://www.olx.pl/d/oferta/wynajme-mieszkanie-47-7-m2-dwupokojowe-mokotow-ul-lukowa-blisko-sggw-lazarski-autobus-spod-domu-metro-biedronka-lidl-najem-okazjonalny-CID3-ID1bfHlx.html",
+    "description": "Wynajmę mieszkanie 47,7 m2, dwupokojowe, Mokotów, ul. Łukowa, przy Dolince Służewieckiej pośród zieleni. Mieszkanie jest jasne, ma doskonałą lokalizację. Blisko SGGW, Łazarski, autobus spod domu, Metro. Najem okazjonalny.<br />\n<br />\nSzukasz mieszkania blisko swojej uczelni lub pracy w spokojnym miejscu, a jednocześnie z pełną infrastrukturą pod ręką? Świetnie trafiłeś, napewno przypadnie Ci do gustu. <br />\n<br />\nMetro, park i pełne zaplecze usługowe w zasięgu kilku minut pieszo sprawiają, że codzienne życie jest tu wygodne.<br />\n<br />\nM3 znajduje się na 2 piętrze z windą. Ochrona i monitoring. Budynek posiada własny parking.<br />\n<br />\nOpłaty: 2 700 zł plus czynsz: 1 100 zł oraz opłaty za media w zależności od zużycia. <br />\nKaucja wynosi 3 800 zł. <br />\n<br />\nDoskonała lokalizacja i otoczenie.<br />\nW najbliższej okolicy są przystanek autobusowy, metro, szkoła podstawowa, przedszkole i Żabka (pod blokiem), Biedronka i Lidl, dzięki czemu codzienne sprawy załatwisz szybko, bez dalekich dojazdów i stania godzinami w korkach. W zasięgu kwadransu piechotą SGGW, 25 min Łazarski. Budynek stoi w otoczeniu drzew, co gwarantuje kameralność i poczucie spokoju i przestrzeni.<br />\n<br />\nJeśli jesteś zainteresowany zapraszam do kontaktu, mieszkanie dostępne już od 1 lipca.<br />\n<br />\nPośrednikom dziękujemy. <br />\n<br />\nOgłoszenie nie stanowi oferty w rozumieniu przepisów kodeksu cywilnego.",
+    "created_time": "2026-06-28T10:50:33+02:00",
+    "last_refresh_time": "2026-07-28T15:47:41+02:00",
+    "location": {
+      "city": {
+        "id": 17871,
+        "name": "Warszawa",
+        "normalized_name": "warszawa",
+        "_nodeId": "Y2l0eToxNzg3MQ=="
+      },
+      "district": {
+        "id": 353,
+        "name": "Mokotów",
+        "normalized_name": null,
+        "_nodeId": "ZGlzdHJpY3Q6MzUz"
+      },
+      "region": {
+        "id": 2,
+        "name": "Mazowieckie",
+        "normalized_name": "mazowieckie",
+        "_nodeId": "cmVnaW9uOjI="
+      }
+    },
+    "photos": [
+      {
+        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/7v07hzmq7khn3-PL/image;s={width}x{height}",
+        "height": 960,
+        "rotation": 0,
+        "width": 1280
+      },
+      {
+        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/m9rf0h8iqgpr2-PL/image;s={width}x{height}",
+        "height": 960,
+        "rotation": 0,
+        "width": 1280
+      },
+      {
+        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/gdgdpbkjatqa-PL/image;s={width}x{height}",
+        "height": 960,
+        "rotation": 0,
+        "width": 1280
+      },
+      {
+        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/os9hb69jwo343-PL/image;s={width}x{height}",
+        "height": 4032,
+        "rotation": 0,
+        "width": 3024
+      },
+      {
+        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/zclkfjx5o1472-PL/image;s={width}x{height}",
+        "height": 960,
+        "rotation": 0,
+        "width": 1280
+      },
+      {
+        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/vd9ej0o533eq1-PL/image;s={width}x{height}",
+        "height": 960,
+        "rotation": 0,
+        "width": 1280
+      },
+      {
+        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/fglk6zxl7mot2-PL/image;s={width}x{height}",
+        "height": 1712,
+        "rotation": 0,
+        "width": 1292
+      },
+      {
+        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/bpucd0l0tz252-PL/image;s={width}x{height}",
+        "height": 960,
+        "rotation": 0,
+        "width": 1280
+      }
+    ],
+    "params": [
+      {
+        "key": "price",
+        "name": "Cena",
+        "type": "price",
+        "value": {
+          "__typename": "PriceParam",
+          "value": 2700,
+          "type": "price",
+          "negotiable": false,
+          "label": "2 700 zł",
+          "currency": "PLN",
+          "converted_value": null,
+          "converted_currency": null,
+          "arranged": false,
+          "budget": false
+        }
+      },
+      {
+        "key": "pets",
+        "name": "Zwierzęta",
+        "type": "select",
+        "value": {
+          "__typename": "GenericParam",
+          "key": "Nie",
+          "label": "Nie"
+        }
+      },
+      {
+        "key": "winda",
+        "name": "Winda",
+        "type": "select",
+        "value": {
+          "__typename": "GenericParam",
+          "key": "Tak",
+          "label": "Tak"
+        }
+      },
+      {
+        "key": "parking",
+        "name": "Parking",
+        "type": "checkboxes",
+        "value": {
+          "__typename": "CheckboxesParam",
+          "label": "parking strzeżony",
+          "checkboxParamKey": [
+            "parking strzeżony"
+          ]
+        }
+      },
+      {
+        "key": "floor_select",
+        "name": "Poziom",
+        "type": "select",
+        "value": {
+          "__typename": "GenericParam",
+          "key": "floor_2",
+          "label": "2"
+        }
+      },
+      {
+        "key": "furniture",
+        "name": "Umeblowane",
+        "type": "select",
+        "value": {
+          "__typename": "GenericParam",
+          "key": "yes",
+          "label": "Tak"
+        }
+      },
+      {
+        "key": "builttype",
+        "name": "Rodzaj zabudowy",
+        "type": "select",
+        "value": {
+          "__typename": "GenericParam",
+          "key": "blok",
+          "label": "Blok"
+        }
+      },
+      {
+        "key": "m",
+        "name": "Powierzchnia",
+        "type": "input",
+        "value": {
+          "__typename": "GenericParam",
+          "key": "47.7",
+          "label": "47,70 m²"
+        }
+      },
+      {
+        "key": "rooms",
+        "name": "Liczba pokoi",
+        "type": "select",
+        "value": {
+          "__typename": "GenericParam",
+          "key": "two",
+          "label": "2 pokoje"
+        }
+      }
+    ],
+    "contact": {
+      "courier": false,
+      "chat": true,
+      "name": "Ewa",
+      "negotiation": false,
+      "phone": true
+    },
+    "user": {
+      "id": 1256665353,
+      "uuid": "4a05f993-2c1d-4665-a957-977f80b61ffe",
+      "_nodeId": "3d784397ba8cf4471897c4b421aa733322886267",
+      "about": "",
+      "b2c_business_page": false,
+      "company_name": "",
+      "created": "2022-07-12T13:29:22+02:00",
+      "is_online": false,
+      "last_seen": "2026-08-04T12:54:46+02:00",
+      "name": "Karola",
+      "other_ads_enabled": true,
+      "photo": null,
+      "seller_type": null,
+      "social_network_account_type": null,
+      "verification": {
+        "status": "none"
+      }
+    },
+    "map": {
+      "lat": 52.19282,
+      "lon": 21.03232,
+      "radius": 7,
+      "show_detailed": false,
+      "zoom": 13
+    },
+    "district_name": "Mokotów",
+    "rent_price": 2700.0,
+    "admin_rent": 0.0,
+    "total_price": 2700.0,
+    "found_at": "2026-08-04T12:00:53.459320+00:00",
+    "ai_analysis": {
+      "ai_total_price": 3700.0,
+      "ai_notes": "Całkowita cena wynosi 3700 zł, w tym 1100 zł za media. Kaucja wynosi 3800 zł. Najem okazjonalny.",
+      "media_cost": 1100.0,
+      "deposit": "3800 zł",
+      "lease_type": "najem okazjonalny"
+    },
+    "status": "new",
+    "notes": ""
+  },
+  "1089285903": {
+    "id": "1089285903",
+    "title": "Do wynajęcia 2 pok. Koło Parków, Wola, Ciołka",
+    "url": "https://www.olx.pl/d/oferta/do-wynajecia-2-pok-kolo-parkow-wola-ciolka-CID3-ID1bIx1t.html",
+    "description": "Do wynajęcia nowe mieszkanie w eleganckim, kameralnym 5-piętrowym apartamentowcu z 2024 roku na warszawskiej Woli Apartamenty Koło Parków<br />\nZielona, spokojna okolica skrzyżowania ulic Jana Brożka z Erazma Ciołka tuż przy stacji metra!<br />\n<br />\nROZKŁAD:<br />\nPowierzchnia mieszkania: 35,03 m2<br />\nSalon z aneksem kuchennym - 18,32 m2<br />\nSypialnia - 9,45 m2<br />\nŁazienka - 3,88 m2<br />\nPrzedpokój - 3,38 m2<br />\nBalkon (południe) - 6,76 m2<br />\nMiejsce postojowe w garażu podziemnym <br />\n<br />\nSTANDARD:<br />\nLokal na 4 piętrze - winda z garażu; ekspozycja południowa; przestronne patio i strefa wypoczynku<br />\nWyposażenie: nowe AGD: lodówka, piekarnik, zmywarka, zlew, płyta indukcyjna<br />\nW łazience prysznic, umywalka z szafką, podwieszana toaleta, miejsce na pralkę<br />\nW holu - szafa z lustrem (szer 100 cm)<br />\nPodłoga - panele i terakota<br />\nMieszkanie jest umeblowane w sofę rozkładaną, stolik i 2 krzesła oraz szafę w sypialni i podwójne łóżko<br />\nDuże okna, drzwi antywłamaniowe, ochrona, video domofon<br />\n <br />\nLOKALIZACJA: Wokół pełna infrastruktura sklepy, centrum handlowe, hipermarket, przychodnie, apteki, szkoły, przedszkola, basen, parki.<br />\nStacja metra Księcia Janusza - 750 m<br />\n<br />\nOPŁATY:<br />\nOprócz czynszu najmu 3200 PLN/m-c płatny jest czynsz do administracji w wysokości ok. 1000 PLN plus opłata za energię elektryczną. Miejsca w garażu  podziemnym za dodatkową opłatą.Wymagana kaucja. Umowa o najem okazjonalny.<br />\n<br />\nPolecam!<br />\n<br />\nEng_<br />\nA new apartment for rent in an elegant, intimate 5-story apartment building, built in 2024, in Warsaw's Wola district. Apartamenty Koło Parków<br />\nA green, quiet neighborhood at the intersection of Jana Brożka and Erazma Ciołka streets, right next to the metro station!<br />\nLAYOUT:<br />\nApartment size: 35.03 m²<br />\nLiving room with kitchenette - 18.32 m²<br />\nBedroom - 9.45 m²<br />\nBathroom - 3.88 m²<br />\nHallway - 3.38 m²<br />\nBalcony (south-facing) - 6.76 m²<br />\nParking space in the underground garage<br />\nSTANDARD:<br />\nApartment on the 4th floor - elevator from the garage; south-facing; Spacious patio and relaxation area<br />\nAmenities: New appliances: refrigerator, oven, dishwasher, sink, induction cooktop<br />\nBathroom: shower, sink with cabinet, wall-hung toilet, space for a washing machine<br />\nHallway: wardrobe with mirror (100 cm wide)<br />\nFloor: laminate and terracotta<br />\nThe apartment is furnished with a sofa bed, table and 2 chairs, and a wardrobe in the bedroom and double bedroom. Large windows, security doors, security, video intercom<br />\nLOCATION: Full infrastructure nearby: shops, shopping center, hypermarket, clinics, pharmacies, schools, kindergartens, swimming pool, and parks.<br />\nKsięcia Janusza metro station - 750 m<br />\nFEES:<br />\nIn addition to the PLN 3,200/month rent, an administrative fee of approximately PLN 1000 plus electricity is payable. Underground parking spaces are available for an additional fee. A security deposit is required. Occasional lease agreement.<br />\n<br />\nI recommend it!",
+    "created_time": "2026-08-04T13:04:16+02:00",
+    "last_refresh_time": "2026-08-04T13:15:46+02:00",
+    "location": {
+      "city": {
+        "id": 17871,
+        "name": "Warszawa",
+        "normalized_name": "warszawa",
+        "_nodeId": "Y2l0eToxNzg3MQ=="
+      },
+      "district": {
+        "id": 359,
+        "name": "Wola",
+        "normalized_name": null,
+        "_nodeId": "ZGlzdHJpY3Q6MzU5"
+      },
+      "region": {
+        "id": 2,
+        "name": "Mazowieckie",
+        "normalized_name": "mazowieckie",
+        "_nodeId": "cmVnaW9uOjI="
+      }
+    },
+    "photos": [
+      {
+        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/sgke58np84on-PL/image;s={width}x{height}",
+        "height": 1086,
+        "rotation": 0,
+        "width": 1448
+      },
+      {
+        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/tvzq6pdyeve13-PL/image;s={width}x{height}",
+        "height": 1086,
+        "rotation": 0,
+        "width": 1448
+      },
+      {
+        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/k4d619rdv3qu-PL/image;s={width}x{height}",
+        "height": 1086,
+        "rotation": 0,
+        "width": 1448
+      },
+      {
+        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/h4l3fhkcrez02-PL/image;s={width}x{height}",
+        "height": 1402,
+        "rotation": 0,
+        "width": 1122
+      },
+      {
+        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/nxhko6oxy5j63-PL/image;s={width}x{height}",
+        "height": 1448,
+        "rotation": 0,
+        "width": 1086
+      },
+      {
+        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/83ulbmjwqs363-PL/image;s={width}x{height}",
+        "height": 1086,
+        "rotation": 0,
+        "width": 1448
+      },
+      {
+        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/nfwuqnz2fugs3-PL/image;s={width}x{height}",
+        "height": 1448,
+        "rotation": 0,
+        "width": 1086
+      },
+      {
+        "link": "https://ireland.apollo.olxcdn.com:443/v1/files/azupul0i9xcs-PL/image;s={width}x{height}",
+        "height": 1448,
+        "rotation": 0,
+        "width": 1086
+      }
+    ],
+    "params": [
+      {
+        "key": "price",
+        "name": "Cena",
+        "type": "price",
+        "value": {
+          "__typename": "PriceParam",
+          "value": 3200,
+          "type": "price",
+          "negotiable": false,
+          "label": "3 200 zł",
+          "currency": "PLN",
+          "converted_value": null,
+          "converted_currency": null,
+          "arranged": false,
+          "budget": false
+        }
+      },
+      {
+        "key": "pets",
+        "name": "Zwierzęta",
+        "type": "select",
+        "value": {
+          "__typename": "GenericParam",
+          "key": "Nie",
+          "label": "Nie"
+        }
+      },
+      {
+        "key": "winda",
+        "name": "Winda",
+        "type": "select",
+        "value": {
+          "__typename": "GenericParam",
+          "key": "Tak",
+          "label": "Tak"
+        }
+      },
+      {
+        "key": "parking",
+        "name": "Parking",
+        "type": "checkboxes",
+        "value": {
+          "__typename": "CheckboxesParam",
+          "label": "w garażu",
+          "checkboxParamKey": [
+            "w garażu"
+          ]
+        }
+      },
+      {
+        "key": "floor_select",
+        "name": "Poziom",
+        "type": "select",
+        "value": {
+          "__typename": "GenericParam",
+          "key": "floor_4",
+          "label": "4"
+        }
+      },
+      {
+        "key": "furniture",
+        "name": "Umeblowane",
+        "type": "select",
+        "value": {
+          "__typename": "GenericParam",
+          "key": "yes",
+          "label": "Tak"
+        }
+      },
+      {
+        "key": "builttype",
+        "name": "Rodzaj zabudowy",
+        "type": "select",
+        "value": {
+          "__typename": "GenericParam",
+          "key": "apartamentowiec",
+          "label": "Apartamentowiec"
+        }
+      },
+      {
+        "key": "m",
+        "name": "Powierzchnia",
+        "type": "input",
+        "value": {
+          "__typename": "GenericParam",
+          "key": "35",
+          "label": "35 m²"
+        }
+      },
+      {
+        "key": "rooms",
+        "name": "Liczba pokoi",
+        "type": "select",
+        "value": {
+          "__typename": "GenericParam",
+          "key": "two",
+          "label": "2 pokoje"
+        }
+      }
+    ],
+    "contact": {
+      "courier": false,
+      "chat": true,
+      "name": "Agnieszka",
+      "negotiation": false,
+      "phone": true
+    },
+    "user": {
+      "id": 246945079,
+      "uuid": "189869a3-6e5f-4747-a899-0cf3e0413f91",
+      "_nodeId": "675141e983c45c4d7e142def8d387ac6ff571126",
+      "about": "",
+      "b2c_business_page": false,
+      "company_name": "",
+      "created": "2018-06-30T10:53:49+02:00",
+      "is_online": false,
+      "last_seen": "2026-08-04T13:04:17+02:00",
+      "name": "Agnieszka",
+      "other_ads_enabled": true,
+      "photo": "https://img-resizer.prd.01.eu-west-1.eu.olx.org/img-eu-olxpl-production/731667641_1_100x100_rev023.jpg",
+      "seller_type": null,
+      "social_network_account_type": "facebook",
+      "verification": {
+        "status": "none"
+      }
+    },
+    "map": {
+      "lat": 52.23725,
+      "lon": 20.96608,
+      "radius": 7,
+      "show_detailed": false,
+      "zoom": 13
+    },
+    "district_name": "Wola",
+    "rent_price": 3200.0,
+    "admin_rent": 0.0,
+    "total_price": 3200.0,
+    "found_at": "2026-08-04T12:00:53.894697+00:00",
+    "ai_analysis": {
+      "ai_total_price": 4300.0,
+      "ai_notes": "Całkowita cena wynosi 4300 zł, w tym 3200 zł czynszu najmu, 1000 zł czynszu administracyjnego i 1000 zł opłaty za media. W cenie jest miejsce postojowe w garażu podziemnym. Wymagana kaucja.",
+      "media_cost": 1000.0,
+      "deposit": "Wymagana kaucja",
+      "lease_type": "najem okazjonalny"
     },
     "status": "new",
     "notes": ""
