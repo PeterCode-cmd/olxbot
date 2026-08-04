@@ -344,7 +344,8 @@ def set_status(lid: str, status: str) -> None:
     if lid in records:
         records[lid]["status"] = status
         save_listings(records)
-    st.rerun()
+        st.success(f"Status updated to {status}")
+        st.rerun()
 
 
 def set_notes(lid: str, notes: str) -> None:
@@ -352,6 +353,7 @@ def set_notes(lid: str, notes: str) -> None:
     if lid in records:
         records[lid]["notes"] = notes
         save_listings(records)
+        st.success("Notes saved")
 
 
 # ─── Sidebar ─────────────────────────────────────────────────────────────────
